@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>mail_wite.png</file>
+    <file>file_wite.png</file>
+    <file>mail_blue.png</file>
+    <file>user_wite.png</file>
+    <file>user_blue.png</file>
+    <file>file_blue.png</file>
+  </qresource>
+</RCC>
