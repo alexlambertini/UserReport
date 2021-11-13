@@ -28,6 +28,8 @@ def consultarDados(date):
                 '''
                 pessoas = [({'nome': '?', 'email': '?', 'DD': '?', 'telefone': '?', 'caso': '?', 'data': '?'}),
                 '''
+                
+                # file para registro usando data atual
                 file_data = 'registro-{}.txt'.format(date)
 
                 # for dados in sql:
