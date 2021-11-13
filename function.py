@@ -1,5 +1,5 @@
-from PyQt5.QtWidgets import QMessageBox
-from PyQt5 import QtGui
+from PySide2.QtWidgets import QMessageBox
+from PySide2 import QtGui
 import sqlite3
 
 def ShowPopup(titulo, mensagem):
@@ -14,7 +14,7 @@ def ShowPopup(titulo, mensagem):
         msgBox.exec_()
 
 
-def consultarDados():
+def consultarDados(date):
         try:
                 banco = sqlite3.connect('relatorios.db')
                 cursor = banco.cursor()

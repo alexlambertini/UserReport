@@ -10,7 +10,7 @@
 
 from datetime import date
 from sqlite3.dbapi2 import Date
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PySide2 import QtCore, QtGui, QtWidgets
 from function import consultarDados
 
 
@@ -124,9 +124,9 @@ class Ui_ExportWindow(object):
         self.titulo_export.setText(_translate("ExportWindow", "Exportar Relatório"))
         self.btn_relatorio.setText(_translate("ExportWindow", "Exportar Relatório"))
         
-
-        self.btn_relatorio.pressed.connect(self.requisicao)
-
+        self.btn_relatorio.pressed.connect(lambda: 
+                self.requisicao(
+                        self.calendarWidget.selectedDate().toString("yyyy/MM/dd")))
 
         # value = self.calendarWidget.selectedDate()
         self.calendarWidget.clicked.connect(lambda: self.getData(
@@ -139,7 +139,6 @@ class Ui_ExportWindow(object):
             pass
         
  
-
-    def requisicao(self):
-        print('foi')
-        consultarDados()
+    def requisicao(self, date):
+        print(date)
+        consultarDados(date)

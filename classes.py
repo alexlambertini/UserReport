@@ -1,5 +1,5 @@
-from PyQt5.QtCore import showbase
-from PyQt5.QtWidgets import QMessageBox
+from PySide2.QtCore import showbase
+from PySide2.QtWidgets import QMessageBox
 
 class ShowPopup:
     def __init__(self, titulo, mensagem):

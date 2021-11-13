@@ -9,7 +9,7 @@
 
 
 import sqlite3
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PySide2 import QtCore, QtGui, QtWidgets
 from requests.api import get
 from window_export import Ui_ExportWindow
 from datetime import date
