@@ -126,11 +126,11 @@ class Ui_ExportWindow(object):
         
         self.btn_relatorio.pressed.connect(lambda: 
                 self.requisicao(
-                        self.calendarWidget.selectedDate().toString("yyyy/MM/dd")))
+                        self.calendarWidget.selectedDate().toString("yyyy-MM-dd")))
 
         # value = self.calendarWidget.selectedDate()
         self.calendarWidget.clicked.connect(lambda: self.getData(
-                self.calendarWidget.selectedDate().toString("yyyy/MM/dd")
+                self.calendarWidget.selectedDate().toString("yyyy-MM-dd")
                 ))
 
     def getData(self, date):
