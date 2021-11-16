@@ -1,0 +1,123 @@
+Nome: Carlão
+Mensagem: Um contato da agenda chamado Carlão tento ligação de vídeo em quanto estava atendendo Edison (vendedor) segundo nomes da a agenda do celular.
+
+Ele tentou ligar 2 vezes uma em sequência
+
+Enviei a seguinda mensagem:
+
+Bom dia Carlos, tudo bem? 
+Meu nome é Alexandre, vi que ouve uma tentativa de ligação porem não consigo atender sua ligação, pois estou em mais de um atendimento no momento.
+
+Você pode tirar suas dúvidas por aqui (WhatsApp) pode ser por áudio ou vídeo.
+
+Em que posso te ajudar?
+
+-
+Cliente visualizou e não retornou.
+-
+
+Como reportei em sequência para Mirele, eu tenho um problema com as ligações, alguns clientes ligam e eu não consigo atender a todos ao mesmo tempo, pois estou atendendo os clientes por ordem de chegada, e como sou apenas uma pessoa atentendo, quando ligam se estou conectado remoto na máquina de um cliente, não consigo atender.
+
+Se acaso eu atender o telefone como consequêcia atrapalharia o atendimento em adamento.
+
+Atendo todos os chamados feito no dia dentro do horário de funcionamento da empresa.Nome: Ivo Car
+Mensagem: Ivo entrou em contato com o suporte com problemas em uma das cabeças, uma delas não estava mais ligando.
+Ele gostaria que houvesse algum técino em Salvador, porem eu expliquei pra ele que ele mesmo poderia realizar os testes já que era bem simples.
+
+O cliente relutou bastante, mas eu cosnegui convence-lo a fazer, fomos fazendo aos poucos e no fim deu certo.
+
+O aparelho dele de modelo LTA 900, não estava ligando devido a bateria fizemos a inversão de placas e tentamos carregar a bateria do outro lado porem o led que fica vermelho quando está em carga continuava verde e não ligava, já na outra bateria sua placa ligou.
+
+O cliente não quis fazer um teste de período maior para testarmos a bateria, mas quis o contato do Eliezer para comprar uma nova bateria, então foi passado o contato para o Eliezer o cliente agradeceu.
+Nome: Luiz Conceição - LFN
+Mensagem: Ligo dizendo que tem um cliente de Friburgo que precisava de um suporte e me passou o contato do Carlos Alberto.
+Segue o processo no próximo relatório.Nome: Carlos Alberto
+Mensagem: Carlos entrou em contato com o suporte dizendo o seguinte:
+Todo carro que eu alinho está comendo o pneu pro lado de dentro gostaria de um suporte de vocês.
+
+Perguntei ao Carlos se ele já havia aferido a calibração do seu aparelho, ele disse que quando ele comprou o aparelho o Rodrigo ( que eu não sei quem é ) já tinha feito essa calibração pra ele.
+
+Então eu disse para ele que coloca-se suas cabeças na balança de calibração e aferisse as medidas conforme o vídeo de calibração que enviei pra ele.
+
+Em resposta ele disse:
+
+Acabamos de fazer a aferição do aparelho e constatamos que a convergência estava 2 graus positiva. Outras medições também um pouco fora. Vamos acompanhar amanhã e entraremos em contato. 
+
+Disse que qualquer novidade retornava.Nome: Rafael Bolanho
+Mensagem: Primeiro contato do Rafael foi com uma dúvida de um erro que ainda não tinha visto. 
+
+Modelo ADL 600
+
+Ele diz que o aparelho está ligado em um computador e do nada esse computador para de se comunicar com as cabeças, nesse momento ele faz a troca dos computadores, liga e configura no novo computador e funciona mais alguns dias e para novamente.
+Dai ele volta ao outro computador e funciona mais dois dias.
+Então ele tem que ficar revezando o computador.
+
+Eu perguntei para o Mateus se ele tinha ideia de o porque que isso acontecia ele também disse que nunca tinha visto isso.
+
+Perguntei ao Rafael se os dois computadores tinham o mesmo Windows ele disse que não, eram Windows diferentes. Perguntei se quando isso acontecia ele tentou reiniciar o computador e reconfigurar a conexão, ele também disse que isso não adiantava, pergutei se havia tentando a troca de porta USB ele disse que já hávia feito também.
+
+Então eu retornei a ele dizendo que não sabia o que era e que precisava fazer um teste formatando uma das máquinas, e ele não comentou mais sobre assunto.
+
+Segundo contato do Rafael foi ele perguntando se a placa Modelo LTA300 funcionava com a bateria de Nickel ou LítioNome: Andreison
+Mensagem: Ele entrou em contato dizendo que uma das cabeças não estavam carregando a bateria.
+O Andreison disse que já fez os testes necessários e trocou uma bateria pela outra e mesmo assim o problema persistiu. Então ele diz que o problema é na parte de carregamento placa principal que não está carregando a bateria.
+
+Perguntei se o máquinario dele ainda estava na garantia ele retornou dizendo que o equipamento já tem um tempo de uso, foram compradas em agosto de 2019.
+
+Então eu disse que ele teria que nos enviarmos a placa para darmos assistência.
+Em resposta ele perguntou se poderiamos enviarmos uma nova placa de estepe para que ele não ficasse sem trabalhar, pois tem muitoa geometria pra fazer.
+
+Eu retornei dizendo que entendo, mas que ele teria que ou comprar uma nova placa para ir utilizando em quanto a velha estaria na assistência ou esperar a placa ser consertada.
+
+Então ele perguntou qual o prazo de conserto, em reposta o Mateus retornou dizendo que não tem como dar um prazo de conserto sem estar com a placa em mãos, pois sem saber o defeito fica difícil dizer.
+d
+Ele disse que então veria um período mais tranquilo e nos enviaria a placa.Nome: João Sousa
+Mensagem: Relembrando:
+
+Entrou em contato com problema na cabeça do lado do passageiro, indicando laser fraco.
+
+O cliente enviou as fotos e realmente o laser estava bem mais fraco que o normal, segundo relato do cliente este problema está atrapalhando a leitura, causando variações na leitura dos dados.
+
+Fizemos os testes necessários e constatei que o problema é somente no laser.
+Cheguei a essa conclusão pois fizemos primeiramente a inversão das placas nas cabeças e o resultado foi o mesmo, laser fraco, então fizemos o teste trocando somente o laser e o novo laser 
+conectado acendeu normal.
+
+Constatado defeito somente no laser  o cliente informou o interesse de comprar outra placa e um laser para deixar de reserva, neste momento informei ao cliente que ele poderia saber os preços 
+com a área comercial então passei o contato do Eliezer
+
+[ATUALIZANDO O CASO]
+
+Hoje o João retornou contato e disse que pra ele não compensaria comprar a placa que o valor está próximo aos 600 reais e que iria comprar somente o laser com o valor próximo de 200 reais, e nos perguntou se poderiamos fazer um vídeo de como efetuar a troca.
+
+Em resposta eu disse que iria providenciar o vídeo para enviar pra ele assim que ele estivesse com o laser em mãos.
+
+Mas até o momento ele não efetuou a compra.Nome: Guilherme - Eberlin
+Mensagem: Entrou em contato para saber o status de algumas placas que eles haviam enviado para o reparo.
+As placas foram envadas como seguinte código:
+OJ947400155BR
+
+Em contato com o Mateus.
+Ele retornou que as placas já estão sendo verificadas duas delas já foram reparadas e assim que possível enviaremos um orçamento.
+Nome: Edison - Vendedor
+Mensagem: [05/11/2021]
+
+Edison entrou em contato pedindo que eu entrasse em contato com um de seus clientes, Jonas.
+
+Jonas
+51 8550-3446
+
+Jonas relatou ter problemas na comunicação das cabeças com seu software.
+Então lhe pedi que fizéssemos alguns testes, e com esses testes foi constatado que a luz de seu modem não estava acendendo,
+lhe pedi que testassem em outras portas de seu computador, o cliente disse que já havia feito isso e mesmo assim o modem não acende, 
+Então pedi para que o cabo que liga o modem ao computador fosse trocado.
+
+O cliente disse já ter trocado e mesmo assim o problema persiste.
+
+Informou que seu aparelho está na garantia que pela data de compra deve ter 5 meses de uso, então pedi ao mesmo que enviasse uma foto legível da nota fiscal.
+
+O cliente não retornou até o momento.
+
+[ATUALIZAÇÃO DO CASO]
+
+Hoje o Edison entrou encontato com a nota de compra do cliente, foi passado para o Eliezer que disse que seria enviado um novo modem para o cliente.
+Foi passado a informação para o Edison e em resposta ele mandou o seguinte áudio que foi encaminhado para o Eliezer as 17:32 e também segue em anexo.

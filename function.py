@@ -1,3 +1,4 @@
+from typing import Text
 from PySide2.QtWidgets import QMessageBox
 from PySide2 import QtGui
 import sqlite3 
@@ -28,7 +29,6 @@ def consultarDados(date):
 
                 # file para registro usando data atual
                 file_data = 'registro-{}.txt'.format(date)
-
      
                 # para debug apenas
                 '''
