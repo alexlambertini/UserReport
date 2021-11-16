@@ -1,9 +1,10 @@
 from PySide2.QtWidgets import QMessageBox
 from PySide2 import QtGui
-import sqlite3
+import sqlite3 
+import codecs
 
 def ShowPopup(titulo, mensagem):
-        print("não foi")
+
         msgBox = QMessageBox()
         msgBox.setIcon(QMessageBox.Information)
         msgBox.setWindowIcon(QtGui.QIcon('ico/relatorio.ico'))
@@ -11,7 +12,7 @@ def ShowPopup(titulo, mensagem):
         msgBox.setText(mensagem)
         msgBox.setStandardButtons(QMessageBox.Ok)
    
-        msgBox.exec_()
+        msgBox.exec_() 
 
 
 def consultarDados(date):
@@ -25,37 +26,50 @@ def consultarDados(date):
 
                 sql = cursor.fetchall()
 
-                '''
-                pessoas = [({'nome': '?', 'email': '?', 'DD': '?', 'telefone': '?', 'caso': '?', 'data': '?'}),
-                '''
-                
                 # file para registro usando data atual
                 file_data = 'registro-{}.txt'.format(date)
 
-                # for dados in sql:
-                print(sql[0][0])
+     
+                # para debug apenas
+                '''
+                print("Para nome -> {}".format(sql[0][0]))
+                print("Para email -> {}".format(sql[0][1]))
+                print("Para ddd -> {}".format(sql[0][2]))
+                print("Para telefone -> {}".format(sql[0][3]))
+                print("Para report -> {}".format(sql[0][4]))
+                print("Para data -> {}".format(sql[0][5]))
+                '''
 
-                with open(file_data, 'w') as file:             
+                with codecs.open(file_data, 'w', 'utf-8') as file:             
+
                         # apenas para registro - inicio da escrita
-                        print('Beign writing {} to txt'.format(sql))
+                        '''print('Beign writing {} to txt'.format(sql))'''
+
                         # --- organizando os dados
                         # --- muito cuidado, pois esta sempre sobrescrevendo no dia.
-                        # 
-                        file.write(str(sql))
-                        # para debug apenas
-                        print("Para nome -> {}".format(sql[0][0]))
-                        print("Para email -> {}".format(sql[0][1]))
-                        print("Para ddd -> {}".format(sql[0][2]))
-                        print("Para telefone -> {}".format(sql[0][3]))
-                        print("Para report -> {}".format(sql[0][4]))
-                        print("Para data -> {}".format(sql[0][5]))
+                        for data in range(0, len(sql)):
+
+                           Nome = sql[data][0]
+                           Email = sql[data][1]
+                           DD = sql[data][2]
+                           Telefone = sql[data][3]
+                           Relatorio = sql[data][4]
+
+                           report = "Nome: {}\n".format(Nome)
+                           report += "E-mail: {}\n".format(Email)
+                           report += "Telefone: {}\n".format(str(DD) + '-' + str(Telefone + "\n"))
+                           report += "Relaório: {}\n\n".format("\n" + Relatorio)
+                           report += '-' *200 + '\n\n'
+                           file.write(report)
+
 
                         # fim da escrita.
-                        print('End writing {} to txt'.format(sql))
+                        '''print('End writing {} to txt'.format(sql))'''
                         file.flush()
+
+                        ShowPopup("Informação","Dados exportados com sucesso!")
+
         except Exception as err:
                 print(err)
                 ShowPopup("Alerta","Não foi possível consultar dados")
 
-if __name__ == "__main__":
-        consultarDados('2021-11-13')

@@ -13,7 +13,6 @@ from PySide2 import QtCore, QtGui, QtWidgets
 from requests.api import get
 from window_export import Ui_ExportWindow
 from datetime import date
-from function import ShowPopup
 from pycep_correios import get_address_from_cep, WebService, exceptions
 
 
@@ -531,7 +530,7 @@ class Ui_MainWindow(object):
             except:
 
                 ShowPopup("Alerta","Não foi possível gravar dados")
-        
+
         
         def buscarcep(cep):
         
@@ -563,17 +562,12 @@ class Ui_MainWindow(object):
                 except exceptions.BaseException as e:
                    print(e)
         
-        def getdata():
-                ShowPopup('Informaçaõ','Teste')
-
 
         # Action buttons
         self.btn_exportar.clicked.connect(self.openWindow)
         self.btn_salvar.clicked.connect(gravar_dados)
         self.btn_buscar_cep.clicked.connect(buscarcep)
 
-
-        
 
 if __name__ == "__main__":
    import sys
