@@ -29,46 +29,56 @@ def consultarDados(date):
                 '''
                 pessoas = [({'nome': '?', 'email': '?', 'DD': '?', 'telefone': '?', 'caso': '?', 'data': '?'}),
                 '''
-                
+                print('Data found in records: {}'.format(len(sql)))
+
                 # file para registro usando data atual
                 file_data = 'registro-{}.txt'.format(date)
 
                 # for dados in sql:
-                print(sql[0][0])
+                # apenas para registro - inicio da escrita
+                # print('Beign writing {} to txt'.format(sql))
+                # --- organizando os dados
+                # --- muito cuidado, pois esta sempre sobrescrevendo no dia.
+                # 
+                # file.write(str(sql))
+                # report = None
+                tmp = []
+                file = open(file_data, 'w')
+                        
+                for data in range(0, len(sql)):
+                        # print(data[4])
+                        nome = sql[data][0]
+                        # email = data[0][1]
+                        # ddd = data[0][2]
+                        # telefone = data[0][3]
+                        mensagem = sql[data][4]
+                        # data = data[0][5]
+                        # # build report
+                        report = 'Nome: {}\n'.format(nome)
+                        report += 'Mensagem: {}'.format(mensagem)
+                        #tmp.append("Nome: {}\nEmail: {}\nTelefone: {}\n".format(
+                        #        nome, 
+                        #        email, 
+                        #        telefone))
+                        # report += "Email: {}\n".format(email)
+                        print(str(report))
+                        file.write(str(report))
+                                
+        
+                # para debug apenas
+                # print("Para nome -> {}".format(data[0][0]))
+                # print("Para email -> {}".format(data[0][1]))
+                # print("Para ddd -> {}".format(data[0][2]))
+                # print("Para telefone -> {}".format(data[0][3]))
+                # print("Para mensagem -> {}".format(data[0][4]))
+                # print("Para data -> {}".format(data[0][5]))
 
-                with open(file_data, 'w') as file:             
-                        # apenas para registro - inicio da escrita
-                        print('Beign writing {} to txt'.format(sql))
-                        # --- organizando os dados
-                        # --- muito cuidado, pois esta sempre sobrescrevendo no dia.
-                        # 
-                        # file.write(str(sql))
-                        nome = sql[0][0]
-                        email = sql[0][1]
-                        ddd = sql[0][2]
-                        telefone = sql[0][3]
-                        mensagem = sql[0][4]
-                        data = sql[0][5]
-                        # build report
-                        report = "Nome: {}\n".format(nome)
-                        report += "Email: {}\n".format(email)
-                        # write full report
-                        file.write(report)
-
-                        # para debug apenas
-                        print("Para nome -> {}".format(sql[0][0]))
-                        print("Para email -> {}".format(sql[0][1]))
-                        print("Para ddd -> {}".format(sql[0][2]))
-                        print("Para telefone -> {}".format(sql[0][3]))
-                        print("Para mensagem -> {}".format(sql[0][4]))
-                        print("Para data -> {}".format(sql[0][5]))
-
-                        # fim da escrita.
-                        print('End writing {} to txt'.format(sql))
-                        file.flush()
+                # fim da escrita.
+                # print('End writing {} to txt'.format(sql))
+                file.flush()
         except Exception as err:
                 print(err)
                 ShowPopup("Alerta","Não foi possível consultar dados")
 
 if __name__ == "__main__":
-        consultarDados('2021-11-13')
+        consultarDados('2021-11-09')
