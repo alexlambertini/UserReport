@@ -72,4 +72,3 @@ def consultarDados(date):
         except Exception as err:
                 print(err)
                 ShowPopup("Alerta","Não foi possível consultar dados")
-
