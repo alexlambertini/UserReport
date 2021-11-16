@@ -1,3 +1,4 @@
+from typing import Text
 from PySide2.QtWidgets import QMessageBox
 from PySide2 import QtGui
 import sqlite3
@@ -41,13 +42,25 @@ def consultarDados(date):
                         # --- organizando os dados
                         # --- muito cuidado, pois esta sempre sobrescrevendo no dia.
                         # 
-                        file.write(str(sql))
+                        # file.write(str(sql))
+                        nome = sql[0][0]
+                        email = sql[0][1]
+                        ddd = sql[0][2]
+                        telefone = sql[0][3]
+                        mensagem = sql[0][4]
+                        data = sql[0][5]
+                        # build report
+                        report = "Nome: {}\n".format(nome)
+                        report += "Email: {}\n".format(email)
+                        # write full report
+                        file.write(report)
+
                         # para debug apenas
                         print("Para nome -> {}".format(sql[0][0]))
                         print("Para email -> {}".format(sql[0][1]))
                         print("Para ddd -> {}".format(sql[0][2]))
                         print("Para telefone -> {}".format(sql[0][3]))
-                        print("Para report -> {}".format(sql[0][4]))
+                        print("Para mensagem -> {}".format(sql[0][4]))
                         print("Para data -> {}".format(sql[0][5]))
 
                         # fim da escrita.
