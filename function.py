@@ -43,7 +43,7 @@ def consultarDados(date):
                 with codecs.open(file_data, 'w', 'utf-8') as file:             
 
                         # apenas para registro - inicio da escrita
-                        '''print('Beign writing {} to txt'.format(sql))'''
+                        print('Beign writing {} to txt'.format(sql))
 
                         # --- organizando os dados
                         # --- muito cuidado, pois esta sempre sobrescrevendo no dia.
@@ -64,7 +64,7 @@ def consultarDados(date):
 
 
                         # fim da escrita.
-                        '''print('End writing {} to txt'.format(sql))'''
+                        print('End writing {} to txt'.format(sql))
                         file.flush()
 
                         ShowPopup("Informação","Dados exportados com sucesso!")
