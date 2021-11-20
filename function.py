@@ -29,18 +29,9 @@ def consultarDados(date):
 
                 # file para registro usando data atual
                 file_data = 'registro-{}.txt'.format(date)
-     
-                # para debug apenas
-                '''
-                print("Para nome -> {}".format(sql[0][0]))
-                print("Para email -> {}".format(sql[0][1]))
-                print("Para ddd -> {}".format(sql[0][2]))
-                print("Para telefone -> {}".format(sql[0][3]))
-                print("Para report -> {}".format(sql[0][4]))
-                print("Para data -> {}".format(sql[0][5]))
-                '''
 
                 with codecs.open(file_data, 'w', 'utf-8') as file:             
+
 
                         # apenas para registro - inicio da escrita
                         print('Beign writing {} to txt'.format(sql))
@@ -58,7 +49,7 @@ def consultarDados(date):
                            report = "Nome: {}\n".format(Nome)
                            report += "E-mail: {}\n".format(Email)
                            report += "Telefone: {}\n".format(str(DD) + '-' + str(Telefone + "\n"))
-                           report += "Relaório: {}\n\n".format("\n" + Relatorio)
+                           report += "Relatório: {}\n\n".format("\n" + Relatorio)
                            report += '-' *200 + '\n\n'
                            file.write(report)
 

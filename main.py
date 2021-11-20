@@ -4,6 +4,7 @@ from requests.api import get
 from window_export import Ui_ExportWindow
 from datetime import date
 from pycep_correios import get_address_from_cep, WebService, exceptions
+from function import ShowPopup
 
 
 class Ui_MainWindow(object):
@@ -127,7 +128,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QLineEdit:focus {\n"
-"    border:2px solid \"#E3E3E3\"\n"
+"    border:1px solid \"#0099FC\"\n"
 "}\n"
 "")
         self.input_nome.setText("")
@@ -150,7 +151,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QLineEdit:focus {\n"
-"    border:2px solid \"#E3E3E3\"\n"
+"    border:1px solid \"#0099FC\"\n"
 "}\n"
 "")
         self.input_email.setObjectName("input_email")
@@ -177,7 +178,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QLineEdit:focus {\n"
-"    border:2px solid \"#E3E3E3\"\n"
+"    border:1px solid \"#0099FC\"\n"
 "}\n"
 "")
         self.input_ddd.setObjectName("input_ddd")
@@ -194,7 +195,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QLineEdit:focus {\n"
-"    border:2px solid \"#E3E3E3\"\n"
+"    border:1px solid \"#0099FC\"\n"
 "}\n"
 "")
         self.input_telefone.setObjectName("input_telefone")
@@ -221,7 +222,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QTextEdit:focus {\n"
-"    border:2px solid \"#E3E3E3\"\n"
+"    border:1px solid \"#0099FC\"\n"
 "}\n"
 "")
         self.textbox_caso.setTabChangesFocus(False)
@@ -487,10 +488,11 @@ class Ui_MainWindow(object):
                 nome = self.input_nome.text()
                 email = self.input_email.text()
                 ddd = self.input_ddd.text()
+
+
                 telefone = self.input_telefone.text()
                 caso = self.textbox_caso.toPlainText()
                 data_atual = date.today()
-
                 banco = sqlite3.connect('relatorios.db')
                 cursor = banco.cursor()
                 cursor.execute("CREATE TABLE IF NOT EXISTS dados (nome text, email text, ddd integer, telefone integer, caso text,  data integer)")
